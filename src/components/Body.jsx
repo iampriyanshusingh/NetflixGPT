@@ -4,8 +4,8 @@ import Login from "./Login";
 const Body = () => {
   return (
     <>
-    <Login/>
-    <Browse/>
+      <Login />
+      <Browse />
     </>
   );
 };
