@@ -1,6 +1,6 @@
-# Watchly - AI-Powered Streaming Platform
+# NetflixGPT - AI-Powered Streaming Platform
 
-Welcome to **Watchly**, a next-gen Netflix-like streaming platform integrated with **GPT-powered AI** to enhance your viewing experience! 🚀
+Welcome to **NetflixGPT**, a next-gen Netflix-like streaming platform integrated with **GPT-powered AI** to enhance your viewing experience! 🚀
 
 ## 📌 Features
 - 🎥 **High-Quality Streaming** - Watch movies and TV shows in **4K Ultra HD**.
@@ -21,8 +21,8 @@ Welcome to **Watchly**, a next-gen Netflix-like streaming platform integrated wi
 ## 🚀 Getting Started
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-username/Watchly.git
-cd Watchly
+git clone https://github.com/iampriyanshusingh/NetflixGPT.git
+cd NetflixGPT
 ```
 ### 2️⃣ Install Dependencies
 ```sh
@@ -41,7 +41,7 @@ npm run dev
 The app should now be running on `http://localhost:3000`
 
 ## 🤝 Contributing
-Want to improve **Watchly**? Feel free to submit a PR or open an issue.
+Want to improve **NetflixGPT**? Feel free to submit a PR or open an issue.
 
 ## 📜 License
 This project is licensed under the MIT License.
