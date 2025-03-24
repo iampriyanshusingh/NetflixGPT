@@ -5,7 +5,6 @@ const Body = () => {
   return (
     <>
       <Login />
-      <Browse />
     </>
   );
 };

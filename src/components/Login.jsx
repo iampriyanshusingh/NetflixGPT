@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleButtonClick = () => {
     const message = checkValidData(
-      name.current?.value || "",
+      name.current.value,
       email.current.value,
       password.current.value
     );
@@ -26,14 +26,14 @@ const Login = () => {
   return (
     <div className="flex flex-col justify-between">
       <Header />
-      <div className="absolute">
+      <div className="order-1">
         <img
           src="https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/IN-en-20250317-TRIFECTA-perspective_26f87873-6014-460d-a6fb-1d96d85ffe5f_large.jpg"
           className="bg-cover"
         />
       </div>
 
-      <div className="absolute w-3/12 mx-auto left-0 right-0 px-12 pt-12 pb-5 my-32 rounded-lg bg-black/80">
+      <div className=" order-2 absolute w-3/12 mx-auto left-0 right-0 px-12 pt-12 pb-5 my-32 rounded-lg bg-black/80">
         <form
           className="relative text-white rounded-lg"
           onSubmit={(e) => e.preventDefault()}
@@ -117,20 +117,36 @@ const Login = () => {
         </form>
       </div>
 
-      <footer className="absolute w-full bg-[#161616]">
-        <p>Questions? Call 000-800-919-1743 (Toll-Free)</p>
-        <div className="flex justify-between">
-          <div className="flex flex-col">
-            <a src="#">Help Centre</a> <a src="#">Cookie Preferences</a>
-          </div>
-          <div className="flex flex-col">
-            <a src="#">FAQ</a> <a src="#">Corporate Information</a>
-          </div>
-          <div className="flex flex-col">
-            <a src="#">Terms of Use</a>
-          </div>
-          <div className="flex flex-col">
-            <a src="#">Privacy</a>
+      <footer className="order-3">
+        <div className="bg-[#161616] w-full h-full p-16 text-[#FFFFFFB3]">
+          <p className="mb-12">Questions? Call 000-800-919-1743 (Toll-Free)</p>
+          <div className="flex justify-between">
+            <div className="flex flex-col cursor-pointer">
+              <a src="#" className="pb-9 hover:underline">
+                Help Centre
+              </a>
+              <a src="#" className="hover:underline">
+                Cookie Preferences
+              </a>
+            </div>
+            <div className="flex flex-col cursor-pointer">
+              <a src="#" className="pb-9 hover:underline">
+                FAQ
+              </a>
+              <a src="#" className="hover:underline">
+                Corporate Information
+              </a>
+            </div>
+            <div className="flex flex-col cursor-pointer">
+              <a src="#" className="hover:underline">
+                Terms of Use
+              </a>
+            </div>
+            <div className="flex flex-col cursor-pointer">
+              <a src="#" className="hover:underline">
+                Privacy
+              </a>
+            </div>
           </div>
         </div>
       </footer>
