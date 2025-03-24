@@ -122,7 +122,7 @@ const Login = () => {
           <p className="mb-12">Questions? Call 000-800-919-1743 (Toll-Free)</p>
           <div className="flex justify-between">
             <div className="flex flex-col cursor-pointer">
-              <a src="#" className="pb-9 hover:underline">
+              <a src="#" className="pb-6 hover:underline">
                 Help Centre
               </a>
               <a src="#" className="hover:underline">
@@ -130,7 +130,7 @@ const Login = () => {
               </a>
             </div>
             <div className="flex flex-col cursor-pointer">
-              <a src="#" className="pb-9 hover:underline">
+              <a src="#" className="pb-6 hover:underline">
                 FAQ
               </a>
               <a src="#" className="hover:underline">
