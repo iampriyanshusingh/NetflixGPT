@@ -1,7 +1,10 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { auth } from "../utils/firebase";
 
 const Login = () => {
@@ -17,34 +20,34 @@ const Login = () => {
   const toggleLearnMore = () => setIsLearnMore(!isLearnMore);
 
   const handleButtonClick = () => {
-    const message = checkValidData(
-      name.current.value,
-      email.current.value,
-      password.current.value
-    );
+    const enteredName = isSignInForm ? null : name.current?.value;
+    const enteredEmail = email.current?.value;
+    const enteredPassword = password.current?.value;
+
+    const message = checkValidData(enteredName, enteredEmail, enteredPassword);
     setErrorMessage(message);
     if (message) return;
 
-    //create new user (Sign Up // Sign In)
     if (!isSignInForm) {
-      createUserWithEmailAndPassword(
-        auth,
-        email.current.value,
-        password.current.value
-      )
+      // Sign Up
+      createUserWithEmailAndPassword(auth, enteredEmail, enteredPassword)
         .then((userCredential) => {
-          // Signed up
           const user = userCredential.user;
-          console.log(user);
-          // ...
+          console.log("Signed Up:", user);
         })
         .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          setErrorMessage(errorCode + " " + errorMessage);
+          setErrorMessage(error.code + " " + error.message);
         });
     } else {
-      //
+      // Sign In
+      signInWithEmailAndPassword(auth, enteredEmail, enteredPassword)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log("Signed In:", user);
+        })
+        .catch((error) => {
+          setErrorMessage(error.code + " " + error.message);
+        });
     }
   };
 
