@@ -1,11 +1,10 @@
-import Browse from "./Browse";
-import Login from "./Login";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   return (
-    <>
-      <Login />
-    </>
+    <div>
+      <Outlet />
+    </div>
   );
 };
 
