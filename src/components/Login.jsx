@@ -6,6 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
+import { NETFLIX_BG } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -55,10 +56,7 @@ const Login = () => {
     <div className="flex flex-col justify-between">
       <Header />
       <div className="order-1">
-        <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/f6e7f6df-6973-46ef-b98f-12560d2b3c69/web/IN-en-20250317-TRIFECTA-perspective_26f87873-6014-460d-a6fb-1d96d85ffe5f_large.jpg"
-          className="bg-cover"
-        />
+        <img src={NETFLIX_BG} className="bg-cover" />
       </div>
 
       <div className=" order-2 absolute w-3/12 mx-auto left-0 right-0 px-12 pt-12 pb-5 my-32 rounded-lg bg-black/80">
