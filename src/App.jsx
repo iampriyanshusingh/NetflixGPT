@@ -5,12 +5,10 @@ import Browse from "./components/Browse";
 import Login from "./components/Login";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
-import { AuthWatcher } from "./components/AuthWatcher";
 
 const App = () => {
   return (
     <Provider store={appStore}>
-      <AuthWatcher />
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Body />}>
