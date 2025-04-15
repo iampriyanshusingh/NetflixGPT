@@ -5,13 +5,19 @@ const MovieList = ({ title, movies }) => {
   if (!movies || !Array.isArray(movies)) return null;
 
   return (
-    <div className="px-6 bg-black/80">
+    <div className="px-6">
       <h1 className="text-2xl py-4 font-bold text-white">{title}</h1>
       <div className="flex overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden">
         <div className="flex">
-          {movies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
-          ))}
+          {movies
+            .filter((movie) => movie.poster_path) // ✅ only movies with poster
+            .map((movie) => (
+              <MovieCard
+                key={movie.id}
+                movie={movie}
+                posterPath={movie.poster_path}
+              />
+            ))}
         </div>
       </div>
     </div>

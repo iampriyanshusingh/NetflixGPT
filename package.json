@@ -15,10 +15,13 @@
     "@tailwindcss/vite": "^4.0.15",
     "dotenv": "^16.5.0",
     "firebase": "^11.5.0",
+    "framer-motion": "^12.7.3",
+    "lucide-react": "^0.488.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.4.0",
+    "swiper": "^11.2.6",
     "tailwind-scrollbar-hide": "^2.0.0",
     "tailwindcss": "^4.0.15"
   },

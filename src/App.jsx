@@ -1,8 +1,9 @@
-import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Body from "./components/Body";
 import Browse from "./components/Browse";
 import Login from "./components/Login";
+import MovieDetail from "./components/MovieDetail";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Login />} />
             <Route path="/login" element={<Login />} />
             <Route path="/browse" element={<Browse />} />
+            <Route path="/movie/:id" element={<MovieDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -7,6 +7,7 @@ const useTrailerVideo = (movieId) => {
   const dispatch = useDispatch();
 
   const getMovieVideos = async () => {
+    if (!movieId) return;
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/" +
         movieId +
