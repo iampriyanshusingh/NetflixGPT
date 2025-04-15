@@ -57,8 +57,12 @@ const Header = () => {
   const langKey = useSelector((store) => store.config.lang);
 
   return (
-    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between">
-      <img src={NETFLIX_LOGO} alt="Netflix_logo" className="w-44" />
+    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex flex-col md:flex-row justify-between">
+      <img
+        src={NETFLIX_LOGO}
+        alt="Netflix_logo"
+        className="w-44 mx-auto md:mx-0"
+      />
       {user && (
         <div className="flex p-2">
           <select
