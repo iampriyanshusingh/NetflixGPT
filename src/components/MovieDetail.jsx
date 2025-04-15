@@ -94,6 +94,7 @@ const MovieDetails = () => {
         <div className="w-full aspect-video rounded-xl overflow-hidden shadow-xl ring-1 ring-white/10">
           {trailerKey ? (
             <iframe
+              key={trailerKey}
               title="Trailer"
               src={`https://www.youtube.com/embed/${trailerKey}?autoplay=1&mute=1&rel=0&controls=1`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
