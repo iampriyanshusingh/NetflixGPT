@@ -62,7 +62,7 @@ const Header = () => {
       {user && (
         <div className="flex p-2">
           <select
-            className="p-2 bg-gradient-to-r from-yellow-500 to-teal-500 text-white m-2 rounded-lg bg-black/50 font-semibold"
+            className="p-2 bg-gradient-to-r from-yellow-500 to-teal-500 shadow-[0_4px_20px_rgba(255,206,84,0.4)] backdrop-blur-md text-white m-2 rounded-lg bg-black/50 font-semibold cursor-pointer"
             onChange={handleLanguageChange}
           >
             {SUPPORTED_LANG.map((lang) => (
@@ -72,7 +72,7 @@ const Header = () => {
             ))}
           </select>
           <button
-            className="py-2 px-2 m-2 bg-gradient-to-r from-sky-600 to-purple-600 rounded-md cursor-pointer text-white "
+            className="py-2 px-2 m-2 bg-gradient-to-r from-sky-600 to-purple-600 shadow-[0_0_12px_rgba(72,191,255,0.3),0_0_25px_rgba(168,85,247,0.25)] rounded-md backdrop-blur-md cursor-pointer text-white "
             onClick={handleGPTSearchClick}
           >
             {isGPTSearch ? lang[langKey].GPTSearch : lang[langKey].homePage}
