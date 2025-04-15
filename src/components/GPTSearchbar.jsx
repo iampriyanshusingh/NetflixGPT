@@ -29,7 +29,7 @@ const GPTSearchbar = () => {
     const geminiQuery =
       "Act as a Movie Recommendation system and suggest some movies for the query : " +
       searchText.current.value +
-      ". Only give me names of 10 movies, comma seperated like the example result given ahead. Example: Gadar, Sole, Koi Mil Gaya, Golmal";
+      ". Only give me names of 5 movies, comma seperated like the example result given ahead. Example: Gadar, Sole, Koi Mil Gaya, Golmal";
 
     const result = await model.generateContent(geminiQuery);
     const movieList = await result.response.text().split(",");

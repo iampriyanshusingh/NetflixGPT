@@ -112,7 +112,7 @@ const MovieDetails = () => {
       <div className="relative z-10 text-center mt-8 max-w-7xl mx-auto px-3 md:px-12">
         <button
           onClick={() => navigate("/browse")}
-          className="inline-block bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-indigo-600 hover:to-teal-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition-all"
+          className="inline-block bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-indigo-600 hover:to-teal-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:scale-105 transition-all mb-8"
         >
           ← Go Back
         </button>

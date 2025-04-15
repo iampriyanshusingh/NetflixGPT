@@ -5,7 +5,7 @@ const MovieList = ({ title, movies }) => {
   if (!movies || !Array.isArray(movies)) return null;
 
   return (
-    <div className="px-6">
+    <div className="px-6 bg-black/80 rounded-lg">
       <h1 className="text-2xl py-4 font-bold text-white">{title}</h1>
       <div className="flex overflow-x-auto whitespace-nowrap [&::-webkit-scrollbar]:hidden">
         <div className="flex">
