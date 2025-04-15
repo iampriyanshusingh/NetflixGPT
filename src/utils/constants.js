@@ -17,3 +17,10 @@ export const API_NOW_PLAYING = {
 };
 
 export const IMG_CDN = "https://image.tmdb.org/t/p/w780";
+
+export const SUPPORTED_LANG = [
+  { indentifier: "en", name: "English" },
+  { indentifier: "hin", name: "Hindi" },
+  { indentifier: "es", name: "Spanish" },
+  { indentifier: "fr", name: "French" },
+];

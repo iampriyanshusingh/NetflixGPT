@@ -1,6 +1,9 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import lang from "../utils/langConstant";
 
 const VideoTitle = ({ title, overview }) => {
+  const langKey = useSelector((store) => store.config.lang);
   return (
     <div className="pt-[20%] px-24 absolute text-white bg-gradient-to-r from-black w-full min-h-screen aspect-video overflow-x-hidden">
       <h1 className="text-6xl font-bold">{title}</h1>
@@ -23,7 +26,7 @@ const VideoTitle = ({ title, overview }) => {
               fill="currentColor"
             ></path>
           </svg>
-          Play
+          {lang[langKey].play}
         </button>
         <button className="bg-[#6D6D6EB3]/70 text-white p-3 px-10 ml-2 text-lg flex items-center justify-center  rounded-lg hover:bg-[#6D6D6EB3]/100">
           <svg
@@ -44,7 +47,7 @@ const VideoTitle = ({ title, overview }) => {
               fill="currentColor"
             ></path>
           </svg>
-          More Info
+          {lang[langKey].moreInfo}
         </button>
       </div>
     </div>
