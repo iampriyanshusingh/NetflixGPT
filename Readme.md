@@ -3,7 +3,7 @@
 Welcome to **NetflixGPT**, a next-gen Netflix-like streaming platform integrated with **GPT-powered AI** to enhance your viewing experience! 🚀
 
 ## 📌 Features
-- 🎥 **High-Quality Streaming** - Watch movies and TV shows in **4K Ultra HD**.
+- 🎥 **High-Quality Streaming** - Watch movies and TV shows in 4K Ultra HD.
 - 🤖 **AI-Powered Recommendations** - GPT-powered suggestions based on your watch history.
 - 🔍 **Smart Search with GPT** - Get detailed insights, summaries, and recommendations.
 - 💬 **AI Chat Assistant** - Ask anything about a movie, show, or actor using GPT.
